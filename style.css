@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap'); 
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(220, 220, 220,);
+}
+
+.calc {
+    width: 100%;
+    height: 60rem;
+    margin: 2rem auto;
+    color: #888;
+    background-color: #333;
+    box-shadow: 0 6px 24px 8px rgba(0, 0, 0, 0.22);
+}
+
+.display div {
+    background-color: #222;
+    border: none;
+    overflow: hidden;
+}
+
+
+.display div#operation {
+    height: 7.5rem;
+    color: #b4b4b4;
+    padding: 2rem;
+}
+
+.display div#main {
+    height: 12.5rem;
+    font-size: 5.4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.main-number,
+.main-result,
+.operation-op,
+.operation-num {
+    display: inline;
+}
+
+.btn {
+    background-color: #444;
+    color: #b4b4b4;
+    height: 8rem;
+    float: left;
+    border: none;
+    border-radius: 0;
+    font-size: 2.4rem;
+    cursor: default;
+}
+
+.btn-single {
+    width: 25%;
+}
+
+.btn-double {
+    width: 50%;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #b4b4b4;
+}
+
+
+.operator,
+#clear,
+#backspace {
+    background-color: #333;
+}
+
+.operator,
+#clear:hover,
+#backspace:hover {
+    background-color: #2e2e2e;
+    color: #b4b4b4;
+}
+
+#fa-equal {
+    background-color: #ffa000;
+    color: #000;
+}
+
+#fa-equal:hover {
+    transition: 1 ease-in;
+    background-color: #ffc35d ;
+}
+
+/* smartphones and other small devices */
+@media (min-width: 760px) {
+    .calc {
+        margin: 6 rem auto;
+        width: 41rem;
+        color: #fff;
+        background-color: #222;
+    }
+}
