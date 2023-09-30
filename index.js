@@ -15,10 +15,10 @@ const operators = {
 
 
 function clickNumber(e) {
-    var mainDisp = $('#main div:first')
+    var mainDisp = $('#main')
     var value = $(e.target).val()
-    var numElement= `<div class="main-number">${value}</div>`
-    if (mainDisp.contents().length >= 8) {
+    var numElement = `<div class="main-number">${value}</div>`
+    if (mainDisp.contents().length > 8) {
         return false 
     }
     else {
@@ -54,11 +54,11 @@ function clickOperator(e) {
     var operator, number, operationElem
     if (!$('#main div').length) return false 
     else {
-        operator = $(e.target).val() 
+        operator = $(e.target).val()
         number = $('#main').text()
         operationElem = `
-        <div class="operation-num">${number}</div>
-        <div class="operation-op">${operator}</div>
+            <div class="operation-num">${number}</div>
+            <div class="operation-op">${operator}</div>
         `
         operation.append(operationElem)
         $('#main').empty()
