@@ -30,10 +30,10 @@ function clickNumber(e) {
             mainDisp.html(numElement) 
          } else if ($('#main div:first').text() === '0' && value === '.') {
             mainDisp.append(numElement)
-         } else if ($('main div').is("main-result")) mainDisp.html(numElement)
+         } else if ($('#main div').is("main-result")) mainDisp.html(numElement)
          else mainDisp.append(numElement)
     }
-}
+} 
 
 function clickClear(e) {
     $('#operation').empty()

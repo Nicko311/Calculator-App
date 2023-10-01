@@ -88,12 +88,12 @@ body {
     color: #b4b4b4;
 }
 
-#fa-equal {
+#equal {
     background-color: #ffa000;
     color: #000;
 }
 
-#fa-equal:hover {
+#equal:hover {
     transition: 1 ease-in;
     background-color: #ffc35d ;
 }
